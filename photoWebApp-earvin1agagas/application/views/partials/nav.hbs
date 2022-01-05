@@ -1,0 +1,22 @@
+
+<nav id="nav-bar" class="navbar">
+    <div id="brand" class="nav-items">
+        <a href="/" id="brand-anchor"><span
+                id="brand-text"><i style="margin-right: .2rem;">i</i>PA</span></a>
+    </div>
+    <input id="search-text" name="search-text" type="text">
+    <i id="text-bar-icon">
+        <i id="sicon" class="fas fa-search nav-items"></i>
+    </i>
+    <a href="/registration" id="registration-button" class="nav-items anchor-buttons">Register</a>
+    {{log this}}
+    <a href="/postimage" id="post-button" class="nav-items anchor-buttons">Post</a>
+
+    {{#if logged}}
+        <a id="logout-button" class="nav-items anchor-buttons">Logout</a>
+        {{else}}
+    <a href="/login" id="login-button" class="nav-items anchor-buttons">Login</a>
+    {{/if}}
+
+
+</nav>

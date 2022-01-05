@@ -1,0 +1,26 @@
+<title>Login</title>
+<div class="form-container">
+    <header class="form-header">
+       <div><h1>Login Form</h1></div>
+    </header>
+<form id="login-form" class="form-grid-login" method="POST" action="/users/login" enctype="application/x-www-form-urlencoded">
+    <fieldset>
+        <label>Username:</label>
+        <input id="username" name ="username" type="text" placeholder="Username" required/>
+        <br/>
+
+        <label>Password:</label>
+        <input id="password" name ="password" type="password" placeholder="Password" required/>
+
+
+
+
+    </fieldset>
+
+    <button type="submit">Submit</button>
+
+</form>
+    <div id="make-account"> First time?
+        <a href="/registration"> Sign up here!</a>
+    </div>
+</div>

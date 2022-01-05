@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+      <meta charset="UTF-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<<<<<<< HEAD
+      <link rel="stylesheet" type="text/css" href="../public/css/allHTMLfileStyle.css">
+=======
+      <link rel="stylesheet" type="text/css" href="./public/css/allHTMLfileStyle.css">
+      <link rel="icon" href="../public/favicon.ico" sizes="70x70" type="image/ico">
+      <script src="https://kit.fontawesome.com/dbc8382f23.js" crossorigin="anonymous"></script>
+>>>>>>> idk
+      <script defer src="/public/js/frontendjs.js"></script>
+  </head>
+  <body>
+    <div id="container">
+        {{>banner}}
+        {{>nav}}
+        {{#if (emptyObject messages)}}
+            {{> flashmessage}}
+        {{/if}}
+        {{{body}}}
+        {{>footer}}
+    </div>
+
+    {{#if logged}}
+      <script>
+          let ele = document.getElementById('logout-button');
+          if(ele) {
+              ele.onclick = (even) => {
+                  fetch('/users/logout', {
+                      method: "POST"
+                  })
+                  .then((data) => {
+                      location.replace('/');
+                  })
+              }
+          }
+      </script>
+      {{/if}}
+  </body>
+</html>

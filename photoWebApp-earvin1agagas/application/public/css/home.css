@@ -1,0 +1,19 @@
+p {
+    border: 1px solid red;
+}
+
+div {
+    border: 1px solid green;
+    display: grid;
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr 1fr 1fr;
+    gap: 4px;
+}
+body {
+    font-family: "Arial", "Calibri";
+    margin: auto;
+}
+

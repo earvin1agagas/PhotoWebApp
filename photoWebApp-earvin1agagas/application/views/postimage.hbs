@@ -1,0 +1,28 @@
+
+<title>Post Image</title>
+<body>
+    <header>
+        <h1>Post Image</h1>
+    </header>
+    <form id="post-image" class="form-grid-container" method="POST" enctype="multipart/form-data" action='/posts/createPost'>
+        <fieldset>
+            <label>Post Title</label>
+            <input id="post-title" name="title" type="text" placeholder="Post Title" required/>
+            <br/>
+            <label>Post Description</label>
+            <input id="post-desc" name="description" type="text" placeholder="Post Description here..." required/>
+            <br/>
+            <label>Upload Image</label>
+            <input id="img-select" name="uploadImage" type="file" required/>
+            <div/>
+            <label>I agree to the <a href="">Acceptable Use Policy</a></label>
+            <input type="checkbox"/>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">
+            Cancel
+        </button>
+    </form>
+
+</body>
+</html>
